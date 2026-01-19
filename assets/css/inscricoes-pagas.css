@@ -1,0 +1,430 @@
+/**
+ * Inscrições Pagas - Estilos CSS
+ *
+ * @package InscricoesPagas
+ * @version 2.0.0
+ */
+
+/* =============================================================================
+   VARIÁVEIS CSS
+   ============================================================================= */
+:root {
+    --ip-primary: #007bff;
+    --ip-primary-dark: #0056b3;
+    --ip-success: #28a745;
+    --ip-success-dark: #218838;
+    --ip-danger: #dc3545;
+    --ip-warning: #ffc107;
+    --ip-dark: #343a40;
+    --ip-light: #f8f9fa;
+    --ip-gray: #6c757d;
+    --ip-border: #dee2e6;
+    --ip-text: #212529;
+    --ip-highlight: #d4edda;
+}
+
+/* =============================================================================
+   CONTAINER PRINCIPAL
+   ============================================================================= */
+.ip-container {
+    font-family: Arial, sans-serif;
+    background-color: var(--ip-light);
+    margin: 0;
+    padding: 20px;
+    max-width: 100%;
+}
+
+/* =============================================================================
+   ALERTAS
+   ============================================================================= */
+.ip-alert {
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.ip-alert-warning {
+    background-color: #fff3cd;
+    border: 1px solid #ffc107;
+    color: #856404;
+}
+
+.ip-alert a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* =============================================================================
+   FILTROS
+   ============================================================================= */
+.ip-filters-container {
+    background-color: var(--ip-light);
+    border: 1px solid var(--ip-border);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ip-filters-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--ip-dark);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.ip-filters-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.ip-filter-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ip-filter-label {
+    font-size: 14px;
+    color: #495057;
+}
+
+.ip-filter-input {
+    padding: 5px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* =============================================================================
+   RESUMO
+   ============================================================================= */
+.ip-summary-container {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 12px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ip-summary-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: var(--ip-dark);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.ip-summary-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+.ip-summary-item:last-child {
+    margin-bottom: 0;
+}
+
+.ip-summary-value {
+    font-weight: bold;
+    color: var(--ip-primary-dark);
+}
+
+/* =============================================================================
+   BARRA DE AÇÕES
+   ============================================================================= */
+.ip-actions-bar {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: var(--ip-light);
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+/* =============================================================================
+   BOTÕES
+   ============================================================================= */
+.ip-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    border: 1px solid #ced4da;
+    transition: all 0.2s ease;
+}
+
+.ip-btn-default {
+    background-color: var(--ip-light);
+    color: var(--ip-text);
+}
+
+.ip-btn-default:hover {
+    background-color: #e2e6ea;
+}
+
+.ip-btn-success {
+    background-color: var(--ip-success);
+    color: white;
+    border-color: var(--ip-success);
+}
+
+.ip-btn-success:hover {
+    background-color: var(--ip-success-dark);
+}
+
+.ip-btn-primary {
+    background-color: var(--ip-primary);
+    color: white;
+    border-color: var(--ip-primary);
+}
+
+.ip-btn-primary:hover {
+    background-color: var(--ip-primary-dark);
+}
+
+.ip-btn-danger {
+    background-color: var(--ip-danger);
+    color: white;
+    border-color: var(--ip-danger);
+}
+
+.ip-btn-logout {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.ip-checkbox-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+/* =============================================================================
+   TABELA
+   ============================================================================= */
+.ip-table-scroll-container {
+    width: 100%;
+    position: relative;
+}
+
+.ip-double-scroll-top {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: white;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 20px;
+    border: 1px solid var(--ip-border);
+    border-bottom: none;
+    margin-bottom: -1px;
+}
+
+.ip-double-scroll-top > div {
+    height: 20px;
+}
+
+.ip-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    background: white;
+    margin-top: -1px;
+}
+
+.ip-table {
+    width: max-content;
+    min-width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.ip-table,
+.ip-table th,
+.ip-table td {
+    border: 1px solid var(--ip-border);
+}
+
+.ip-table th,
+.ip-table td {
+    padding: 5px 10px;
+    text-align: left;
+    white-space: nowrap;
+    line-height: 1.2;
+}
+
+.ip-table th {
+    background-color: var(--ip-dark);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.ip-table tbody tr:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+.ip-table tbody tr.ip-highlight,
+.ip-table tbody tr.ip-highlight:nth-child(even),
+.ip-table tbody tr.ip-highlight:nth-child(odd) {
+    background-color: var(--ip-highlight);
+}
+
+/* Colunas redimensionáveis */
+.ip-resizable {
+    position: relative;
+}
+
+.ip-resizable::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    cursor: col-resize;
+}
+
+/* =============================================================================
+   BOTÕES NA TABELA
+   ============================================================================= */
+.ip-obs-button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.ip-obs-button.no-obs {
+    background-color: #f0f0f0;
+    border: 1px solid #ced4da;
+}
+
+.ip-obs-button.has-obs {
+    background-color: var(--ip-success-dark);
+    border: 1px solid #000000;
+    color: white;
+}
+
+.ip-detalhes-button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: var(--ip-primary);
+    border: 1px solid #ced4da;
+}
+
+.ip-detalhes-button:hover {
+    background-color: var(--ip-primary-dark);
+}
+
+/* =============================================================================
+   TOOLTIPS
+   ============================================================================= */
+.ui-tooltip {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    max-width: 300px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+}
+
+.ui-tooltip .arrow {
+    width: 70px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: -16px;
+}
+
+.ui-tooltip .arrow.top {
+    top: -16px;
+    bottom: auto;
+}
+
+.ui-tooltip .arrow:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 25px;
+    height: 25px;
+    background: #333;
+    transform: rotate(45deg);
+}
+
+.ui-tooltip .arrow.top:after {
+    bottom: -20px;
+    top: auto;
+}
+
+/* =============================================================================
+   MODAIS
+   ============================================================================= */
+.ui-dialog {
+    z-index: 10000 !important;
+}
+
+.ui-widget-overlay {
+    z-index: 9999 !important;
+}
+
+/* =============================================================================
+   VERSÃO
+   ============================================================================= */
+.ip-version {
+    margin-top: 20px;
+    font-size: 12px;
+    color: var(--ip-gray);
+}
+
+/* =============================================================================
+   RESPONSIVO
+   ============================================================================= */
+@media (max-width: 768px) {
+    .ip-filters-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .ip-actions-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .ip-btn-logout {
+        position: static;
+        margin-top: 10px;
+    }
+}
