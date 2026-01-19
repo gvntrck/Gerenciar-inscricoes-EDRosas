@@ -21,6 +21,9 @@
     --ip-border: #dee2e6;
     --ip-text: #212529;
     --ip-highlight: #d4edda;
+
+    /* Altura das linhas da tabela (ajuste conforme necessário) */
+    --ip-table-row-height: 20px;
 }
 
 /* =============================================================================
@@ -242,7 +245,7 @@
     margin-bottom: -1px;
 }
 
-.ip-double-scroll-top > div {
+.ip-double-scroll-top>div {
     height: 20px;
 }
 
@@ -269,10 +272,13 @@
 
 .ip-table th,
 .ip-table td {
-    padding: 5px 10px;
+    padding: 5px 10px !important;
     text-align: left;
     white-space: nowrap;
-    line-height: 1.2;
+    line-height: 1.2 !important;
+    height: var(--ip-table-row-height) !important;
+    max-height: var(--ip-table-row-height) !important;
+    box-sizing: border-box;
 }
 
 .ip-table th {
@@ -417,12 +423,12 @@
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .ip-actions-bar {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .ip-btn-logout {
         position: static;
         margin-top: 10px;
