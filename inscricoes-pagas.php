@@ -1,7 +1,6 @@
 <?php
 /**
  * Plugin Name:       Inscrições Pagas
- * Plugin URI:        https://edrosas.com.br/plugins/inscricoes-pagas
  * Description:       Sistema de gerenciamento de inscrições pagas em eventos de xadrez. Exibe tabela interativa com filtros, ordenação, exportação CSV e edição de dados.
  * Version:           2.0.0
  * Requires at least: 5.0
