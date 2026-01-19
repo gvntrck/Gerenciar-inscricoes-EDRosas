@@ -2,9 +2,7 @@
 /**
  * Plugin Name:       Inscrições Pagas
  * Description:       Sistema de gerenciamento de inscrições pagas em eventos de xadrez. Exibe tabela interativa com filtros, ordenação, exportação CSV e edição de dados.
- * Version:           2.0.0
- * Requires at least: 5.0
- * Requires PHP:      7.4
+ * Version:           2.0.1
  * Author:            Giovani Tureck
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -24,7 +22,7 @@ if (!defined('ABSPATH')) {
 /**
  * Versão atual do plugin.
  */
-define('INSCRICOES_PAGAS_VERSION', '2.0.0');
+define('INSCRICOES_PAGAS_VERSION', '2.0.1');
 
 /**
  * Caminho absoluto para o diretório do plugin.
