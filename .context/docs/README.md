@@ -1,33 +1,48 @@
-# Documentation Index
+# Documentação do Plugin Inscrições Pagas
 
-Welcome to the repository knowledge base. Start with the project overview, then dive into specific guides as needed.
+Esta pasta contém a documentação técnica do plugin WordPress **Inscrições Pagas** - Sistema de gerenciamento de inscrições pagas em eventos de xadrez.
 
-## Core Guides
-- [Project Overview](./project-overview.md)
-- [Architecture Notes](./architecture.md)
-- [Development Workflow](./development-workflow.md)
-- [Testing Strategy](./testing-strategy.md)
-- [Glossary & Domain Concepts](./glossary.md)
-- [Data Flow & Integrations](./data-flow.md)
-- [Security & Compliance Notes](./security.md)
-- [Tooling & Productivity Guide](./tooling.md)
+## Índice de Documentação
 
-## Repository Snapshot
-- `assets/`
-- `includes/`
-- `inscricoes-pagas.php/`
-- `readme.txt/`
-- `templates/`
-- `uninstall.php/`
+### Visão Geral
+- [**Project Overview**](./project-overview.md) — Visão geral do projeto, propósito e componentes principais
+- [**Glossary**](./glossary.md) — Terminologia, definições de tipos e conceitos do domínio
 
-## Document Map
-| Guide | File | Primary Inputs |
-| --- | --- | --- |
-| Project Overview | `project-overview.md` | Roadmap, README, stakeholder notes |
-| Architecture Notes | `architecture.md` | ADRs, service boundaries, dependency graphs |
-| Development Workflow | `development-workflow.md` | Branching rules, CI config, contributing guide |
-| Testing Strategy | `testing-strategy.md` | Test configs, CI gates, known flaky suites |
-| Glossary & Domain Concepts | `glossary.md` | Business terminology, user personas, domain rules |
-| Data Flow & Integrations | `data-flow.md` | System diagrams, integration specs, queue topics |
-| Security & Compliance Notes | `security.md` | Auth model, secrets management, compliance requirements |
-| Tooling & Productivity Guide | `tooling.md` | CLI scripts, IDE configs, automation workflows |
+### Arquitetura
+- [**Architecture**](./architecture.md) — Arquitetura do sistema, camadas e padrões de design
+- [**Data Flow**](./data-flow.md) — Fluxo de dados e integrações externas
+
+### Desenvolvimento
+- [**Development Workflow**](./development-workflow.md) — Processos de desenvolvimento, branching e contribuição
+- [**Testing Strategy**](./testing-strategy.md) — Frameworks de teste, padrões e requisitos de qualidade
+- [**Tooling**](./tooling.md) — Scripts, configurações de IDE e dicas de produtividade
+
+### Segurança
+- [**Security**](./security.md) — Políticas de segurança, autenticação e gestão de secrets
+
+### Dados Técnicos
+- [**Codebase Map**](./codebase-map.json) — Mapa completo de símbolos, dependências e estrutura
+
+## Quick Links
+
+| Recurso | Descrição |
+|---------|-----------|
+| [AGENTS.md](../../AGENTS.md) | Guia rápido para agentes AI |
+| [Agents Playbooks](../agents/) | Playbooks detalhados de cada agente |
+| [Plugin Principal](../../inscricoes-pagas.php) | Entry point do plugin |
+
+## Stack Tecnológica
+
+- **Linguagem Principal**: PHP 7.4+
+- **Frontend**: JavaScript, CSS
+- **Plataforma**: WordPress 5.0+
+- **Integração**: WooCommerce 4.0+
+- **Banco de Dados**: MySQL via WordPress $wpdb
+
+## Versão Atual
+
+**v2.0.0** — Plugin de gerenciamento de inscrições pagas em eventos de xadrez
+
+---
+
+*Documentação gerada e mantida pelo ai-context MCP*

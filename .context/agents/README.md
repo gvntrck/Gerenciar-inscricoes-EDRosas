@@ -1,30 +1,63 @@
-# Agent Handbook
+# Agent Playbooks - Inscrições Pagas
 
-This directory contains ready-to-customize playbooks for AI agents collaborating on the repository.
+Esta pasta contém os playbooks dos agentes AI especializados para o desenvolvimento do plugin **Inscrições Pagas**.
 
-## Available Agents
-- [Code Reviewer](./code-reviewer.md) — Review code changes for quality, style, and best practices
-- [Bug Fixer](./bug-fixer.md) — Analyze bug reports and error messages
-- [Feature Developer](./feature-developer.md) — Implement new features according to specifications
-- [Refactoring Specialist](./refactoring-specialist.md) — Identify code smells and improvement opportunities
-- [Test Writer](./test-writer.md) — Write comprehensive unit and integration tests
-- [Documentation Writer](./documentation-writer.md) — Create clear, comprehensive documentation
-- [Performance Optimizer](./performance-optimizer.md) — Identify performance bottlenecks
-- [Security Auditor](./security-auditor.md) — Identify security vulnerabilities
-- [Backend Specialist](./backend-specialist.md) — Design and implement server-side architecture
-- [Frontend Specialist](./frontend-specialist.md) — Design and implement user interfaces
-- [Architect Specialist](./architect-specialist.md) — Design overall system architecture and patterns
-- [Devops Specialist](./devops-specialist.md) — Design and maintain CI/CD pipelines
-- [Database Specialist](./database-specialist.md) — Design and optimize database schemas
-- [Mobile Specialist](./mobile-specialist.md) — Develop native and cross-platform mobile applications
+## Agentes Disponíveis
 
-## How To Use These Playbooks
-1. Pick the agent that matches your task.
-2. Enrich the template with project-specific context or links.
-3. Share the final prompt with your AI assistant.
-4. Capture learnings in the relevant documentation file so future runs improve.
+### Desenvolvimento Core
+| Agente | Fases | Descrição |
+|--------|-------|-----------|
+| [**Backend Specialist**](./backend-specialist.md) | P, E | Arquitetura server-side, PHP, banco de dados |
+| [**Frontend Specialist**](./frontend-specialist.md) | P, E | JavaScript, CSS, templates, UX |
+| [**Feature Developer**](./feature-developer.md) | P, E | Implementação de features end-to-end |
+| [**Database Specialist**](./database-specialist.md) | P, E | Schemas, queries, otimização SQL |
 
-## Related Resources
-- [Documentation Index](../docs/README.md)
-- [Agent Knowledge Base](../../AGENTS.md)
-- [Contributor Guidelines](../../CONTRIBUTING.md)
+### Qualidade & Segurança
+| Agente | Fases | Descrição |
+|--------|-------|-----------|
+| [**Bug Fixer**](./bug-fixer.md) | E, V | Análise de bugs e correções |
+| [**Code Reviewer**](./code-reviewer.md) | R, V | Revisão de código e padrões |
+| [**Security Auditor**](./security-auditor.md) | R, V | Vulnerabilidades e segurança |
+| [**Test Writer**](./test-writer.md) | E, V | Testes unitários e integração |
+
+### Arquitetura & Performance
+| Agente | Fases | Descrição |
+|--------|-------|-----------|
+| [**Architect Specialist**](./architect-specialist.md) | P, R | Arquitetura e padrões de design |
+| [**Refactoring Specialist**](./refactoring-specialist.md) | E | Code smells e melhorias estruturais |
+| [**Performance Optimizer**](./performance-optimizer.md) | E, V | Gargalos e otimizações |
+
+### Infraestrutura & Documentação
+| Agente | Fases | Descrição |
+|--------|-------|-----------|
+| [**DevOps Specialist**](./devops-specialist.md) | E, C | CI/CD e automação |
+| [**Documentation Writer**](./documentation-writer.md) | P, C | Documentação técnica |
+| [**Mobile Specialist**](./mobile-specialist.md) | P, E | Responsividade e UX mobile |
+
+## Fases PREVC
+
+Os agentes operam nas seguintes fases do workflow:
+
+- **P** (Plan) — Planejamento e design
+- **R** (Review) — Revisão e validação
+- **E** (Execute) — Implementação
+- **V** (Verify) — Testes e verificação
+- **C** (Complete) — Finalização e documentação
+
+## Como Usar
+
+1. Identifique a tarefa a ser realizada
+2. Consulte o agente mais apropriado
+3. Siga o playbook do agente
+4. Use o collaboration checklist
+5. Documente resultados no hand-off
+
+## Recursos Relacionados
+
+- [AGENTS.md](../../AGENTS.md) — Guia rápido de agentes
+- [Documentation](../docs/) — Documentação técnica
+- [Project Overview](../docs/project-overview.md) — Visão geral do projeto
+
+---
+
+*Playbooks gerados e mantidos pelo ai-context MCP*

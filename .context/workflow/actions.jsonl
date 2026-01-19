@@ -22,3 +22,5 @@
 {"timestamp":"2026-01-19T18:39:59.819Z","tool":"context","action":"fillSingle","status":"success","details":{"params":{"action":"fillSingle","filePath":"c:\\Users\\Administrador\\Documents\\windsurf\\insricoespagas\\.context\\agents\\refactoring-specialist.md"},"result":{"success":true}}}
 {"timestamp":"2026-01-19T18:40:00.737Z","tool":"context","action":"fillSingle","status":"success","details":{"params":{"action":"fillSingle","filePath":"c:\\Users\\Administrador\\Documents\\windsurf\\insricoespagas\\.context\\agents\\security-auditor.md"},"result":{"success":true}}}
 {"timestamp":"2026-01-19T18:40:00.763Z","tool":"context","action":"fillSingle","status":"success","details":{"params":{"action":"fillSingle","filePath":"c:\\Users\\Administrador\\Documents\\windsurf\\insricoespagas\\.context\\agents\\test-writer.md"},"result":{"success":true}}}
+{"timestamp":"2026-01-19T18:46:28.962Z","tool":"context","action":"listToFill","status":"success","details":{"params":{"action":"listToFill","target":"all"},"result":{"success":true}}}
+{"timestamp":"2026-01-19T18:47:16.707Z","tool":"context","action":"check","status":"success","details":{"params":{"action":"check"}}}
