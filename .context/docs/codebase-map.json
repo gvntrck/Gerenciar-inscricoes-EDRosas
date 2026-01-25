@@ -1,0 +1,106 @@
+{
+  "version": "1.0.0",
+  "generated": "2026-01-25T22:49:48.659Z",
+  "stack": {
+    "primaryLanguage": "javascript",
+    "languages": [
+      "php",
+      "javascript"
+    ],
+    "frameworks": [],
+    "buildTools": [],
+    "testFrameworks": [],
+    "packageManager": null,
+    "isMonorepo": false,
+    "hasDocker": false,
+    "hasCI": false
+  },
+  "structure": {
+    "totalFiles": 23,
+    "topDirectories": [
+      {
+        "name": "assets",
+        "fileCount": 2
+      },
+      {
+        "name": "includes",
+        "fileCount": 15
+      },
+      {
+        "name": "inscricoes-pagas.php",
+        "fileCount": 1
+      },
+      {
+        "name": "insricoespagas.zip",
+        "fileCount": 1
+      },
+      {
+        "name": "novos-campos.md",
+        "fileCount": 1
+      },
+      {
+        "name": "readme.md",
+        "fileCount": 1
+      },
+      {
+        "name": "templates",
+        "fileCount": 1
+      },
+      {
+        "name": "uninstall.php",
+        "fileCount": 1
+      }
+    ],
+    "languageDistribution": [
+      {
+        "extension": ".php",
+        "count": 18
+      },
+      {
+        "extension": ".md",
+        "count": 2
+      },
+      {
+        "extension": ".zip",
+        "count": 1
+      },
+      {
+        "extension": ".js",
+        "count": 1
+      },
+      {
+        "extension": ".css",
+        "count": 1
+      }
+    ]
+  },
+  "architecture": {
+    "layers": [],
+    "patterns": [],
+    "entryPoints": []
+  },
+  "symbols": {
+    "classes": [],
+    "interfaces": [],
+    "functions": [
+      {
+        "name": "adjustScrollWidth",
+        "kind": "function",
+        "file": "assets\\js\\inscricoes-pagas.js",
+        "line": 197,
+        "exported": false
+      }
+    ],
+    "types": [],
+    "enums": []
+  },
+  "publicAPI": [],
+  "dependencies": {
+    "mostImported": []
+  },
+  "stats": {
+    "totalSymbols": 1,
+    "exportedSymbols": 0,
+    "analysisTimeMs": 78
+  }
+}
